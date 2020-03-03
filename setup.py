@@ -11,29 +11,30 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
+from json_logic import __version__ as jl_version
+
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+long_description = open(path.join(here, 'README.md'), encoding='utf-8').read()
 
 setup(
-    name='json_logic',
+    name='jsonlogic2',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.7.0-alpha',
+    version=jl_version,
 
     description='Build complex rules, serialize them as JSON, and execute them in Python',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/nadirizr/json-logic-py',
+    url='https://github.com/yashbonde/json-logic-py',
 
     # Author details
-    author='nadir.izr',
-    author_email='nadir@soundmindtech.com',
+    author='yash.bonde',
+    author_email='bonde.yash97@gmail.com',
 
     # Choose your license
     license='MIT',
@@ -55,13 +56,7 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3'
     ],
 
     # What does your project relate to?

@@ -7,14 +7,7 @@ from six.moves import reduce
 import logging
 
 logger = logging.getLogger(__name__)
-
-try:
-    unicode
-except NameError:
-    pass
-else:
-    # Python 2 fallback.
-    str = unicode
+__version__ = '0.1-alpha'
 
 
 def if_(*args):
