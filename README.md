@@ -1,6 +1,6 @@
 # JsonLogicPy2
 
-This is an extension on top of original (json-logic-py)[https://github.com/nadirizr/json-logic-py], the original source code is still untouched. I merely add more functionality and build on top of it. 
+This is an extension on top of original [json-logic-py](https://github.com/nadirizr/json-logic-py), the original source code is still untouched. I merely add more functionality and build on top of it. 
 
 I have a vision that non-technical business users must have power of doing what they want without having to depend on the programming style, only put in their business rules and code should be able to automanage the flow. There are three main things for any business user:
 
